@@ -15,7 +15,7 @@
   \*********************************/
 /***/ ((module) => {
 
-eval("\r\n\r\n\r\n\r\n\r\n\r\nmodule.exports = createEl;\n\n//# sourceURL=webpack://food-festival/./assets/js/domMethods.js?");
+eval("\n\n\n\n\n\nmodule.exports = createEl;\n\n//# sourceURL=webpack://food-festival/./assets/js/domMethods.js?");
 
 /***/ }),
 
@@ -25,7 +25,7 @@ eval("\r\n\r\n\r\n\r\n\r\n\r\nmodule.exports = createEl;\n\n//# sourceURL=webpac
   \*****************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("__webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\r\nconst createEl = __webpack_require__(/*! ./domMethods */ \"./assets/js/domMethods.js\");\r\n\r\nif (window.location.href.indexOf(\"event\") > -1) {\r\n  const currentEvent = JSON.parse(localStorage.getItem(\"currentEvent\")) || {\r\n      title: \"Title Placeholder\",\r\n      subtitle: \"\",\r\n      description: \"\"\r\n  };\r\n\r\n  const pageEl = document.querySelector(\"#page\");\r\n    \r\n  const containerEl = createEl(\"div\", {class: \"container\"},\r\n    createEl(\"div\", {class: \"card mb-3\"}, \r\n      createEl(\"img\", {class: \"card-img-top\", style: \"width: 5px\", src: currentEvent.image || \"https://via.placeholder.com/350x150\"}),\r\n      createEl(\"div\", {class: \"card-body\"}, \r\n        createEl(\"h1\", {class: \"card-title\"}, currentEvent.title || \"\"),\r\n        createEl(\"h2\", {class: \"text-muted\"}, currentEvent.subtitle || \"\"),\r\n        createEl(\"p\", {class: \"card-text mt-3\"}, currentEvent.description || createLoremIpsum(100)),\r\n        createEl(\"a\", {class: \"btn btn-primary\", href: \"tickets.html\"}, \"Buy Tickets\")\r\n      )\r\n    ),\r\n      \r\n    )\r\n    pageEl.appendChild(containerEl)\r\n}\n\n//# sourceURL=webpack://food-festival/./assets/js/events.js?");
+eval("__webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\nconst createEl = __webpack_require__(/*! ./domMethods */ \"./assets/js/domMethods.js\");\n\nif (window.location.href.indexOf(\"event\") > -1) {\n  const currentEvent = JSON.parse(localStorage.getItem(\"currentEvent\")) || {\n      title: \"Title Placeholder\",\n      subtitle: \"\",\n      description: \"\"\n  };\n\n  const pageEl = document.querySelector(\"#page\");\n    \n  const containerEl = createEl(\"div\", {class: \"container\"},\n    createEl(\"div\", {class: \"card mb-3\"}, \n      createEl(\"img\", {class: \"card-img-top\", style: \"width: 5px\", src: currentEvent.image || \"https://via.placeholder.com/350x150\"}),\n      createEl(\"div\", {class: \"card-body\"}, \n        createEl(\"h1\", {class: \"card-title\"}, currentEvent.title || \"\"),\n        createEl(\"h2\", {class: \"text-muted\"}, currentEvent.subtitle || \"\"),\n        createEl(\"p\", {class: \"card-text mt-3\"}, currentEvent.description || createLoremIpsum(100)),\n        createEl(\"a\", {class: \"btn btn-primary\", href: \"tickets.html\"}, \"Buy Tickets\")\n      )\n    ),\n      \n    )\n    pageEl.appendChild(containerEl)\n}\n\n//# sourceURL=webpack://food-festival/./assets/js/events.js?");
 
 /***/ }),
 
